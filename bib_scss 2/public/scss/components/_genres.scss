@@ -1,0 +1,42 @@
+@use "../base/variables" as *;
+
+#genres {
+  display: grid;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.genre-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#genres label {
+  background-color: $bg-input;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+#genres input[type="checkbox"] {
+  display: none;
+}
+
+#genres label:has(input:checked) {
+  background-color: $accent;
+  color: $text-dark;
+}
+
+.genre-divider {
+  grid-column: 1 / -1;
+  height: 2px;
+  background: rgba(255, 204, 112, 0.3);
+  margin: 12px 0;
+  border: none;
+}

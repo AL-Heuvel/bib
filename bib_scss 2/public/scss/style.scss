@@ -1,0 +1,17 @@
+// Eerst basis
+@use "base/variables";
+@use "base/reset";
+@use "base/typography";
+
+// Dan componenten
+@use "components/buttons";
+@use "components/form";
+@use "components/cards";
+@use "components/genres";
+@use "components/search";
+
+// Dan pagina’s
+@use "pages/toevoeg";
+@use "pages/overzicht";
+@use "pages/detail";
+@use "pages/update";

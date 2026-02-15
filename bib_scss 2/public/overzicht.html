@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Overzicht Bibliotheek</title>
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+<h1>Overzicht Bibliotheek</h1>
+<div class="header-controls">
+  <a href="toevoeg.html" class="btn-overzicht">New item</a>
+  
+  <div class="filter-container">
+    <div class="filter-group">
+      <label for="typeFilter">Type:</label>
+      <select id="typeFilter">
+        <option value="">-- Alle types --</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label for="genreFilter">Genre:</label>
+      <select id="genreFilter">
+        <option value="">-- Alle genres --</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label for="statusFilter">Status:</label>
+      <select id="statusFilter">
+        <option value="">-- Alle status --</option>
+        <option value="not_yet">want to watch/read</option>
+        <option value="working_on_it">working on it</option>
+        <option value="finished">finished</option>
+      </select>
+    </div>
+
+    <button id="resetBtn" class="btn-reset">Reset filters</button>
+  </div>
+</div>
+
+<div class="container" id="lijst"></div>
+
+<script src="js/overzicht.js">
+</script>
+
+</body>
+</html>

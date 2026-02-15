@@ -1,0 +1,251 @@
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1e1e2f;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #ffcc70;
+    }
+
+    .detail-wrapper {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    #detailView,
+    #editForm {
+      background-color: #2a2a40;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      padding: 30px;
+    }
+
+    .detail-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .detail-info {
+      margin: 15px 0;
+    }
+
+    .detail-info label {
+      font-weight: bold;
+      color: #ffcc70;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .detail-info p {
+      margin: 0;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .button-group a,
+    .button-group button {
+      flex: 1;
+      min-width: 100px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .btn-edit {
+      background-color: #ffcc70;
+      color: #1e1e2f;
+    }
+
+    .btn-edit:hover {
+      background-color: #ffaa33;
+    }
+
+    .btn-delete {
+      background-color: #ff5c5c;
+      color: white;
+    }
+
+    .btn-delete:hover {
+      background-color: #ff2e2e;
+    }
+
+    .btn-back {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .btn-back:hover {
+      background-color: #5a6268;
+    }
+
+    .btn-cancel {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .btn-cancel:hover {
+      background-color: #5a6268;
+    }
+
+    #editForm {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #editForm.visible {
+      display: block;
+    }
+
+    #editForm input,
+    #editForm select,
+    #editForm textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #3a3a55;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    #editForm input:focus,
+    #editForm select:focus,
+    #editForm textarea:focus {
+      outline: 2px solid #ffcc70;
+    }
+
+    #editForm button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 10px;
+      transition: 0.3s ease;
+    }
+
+    #editForm button:hover {
+      background-color: #218838;
+    }
+
+    #genres {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    #genres label {
+      background-color: #3a3a55;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: normal;
+      color: #ffffff;
+    }
+
+    #genres input[type="checkbox"] {
+      display: none;
+    }
+
+    #genres label:has(input:checked) {
+      background-color: #ffcc70;
+      color: #1e1e2f;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      background-color: #6c757d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #5a6268;
+    }
+
+    @media (max-width: 768px) {
+      .detail-wrapper {
+        margin: 20px 0;
+      }
+
+      #detailView,
+      #editForm {
+        padding: 20px;
+      }
+
+      .button-group {
+        gap: 8px;
+      }
+
+      .button-group a,
+      .button-group button {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .detail-wrapper {
+        margin: 10px 0;
+      }
+
+      #detailView,
+      #editForm {
+        padding: 15px;
+      }
+
+      .detail-image {
+        height: 200px;
+        margin-bottom: 15px;
+      }
+
+      .button-group {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .button-group a,
+      .button-group button {
+        width: 100%;
+        min-width: unset;
+        padding: 10px;
+      }
+
+      #genres {
+        grid-template-columns: 1fr;
+      }
+    }

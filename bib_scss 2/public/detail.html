@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Item Detail</title>
+  <link rel="stylesheet" href="scss/style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<div class="detail-wrapper">
+  <a href="overzicht.html" class="back-link">← Terug naar overzicht</a>
+
+  <div id="detailView" class="card">
+    <img id="detailImage" src="" alt="Item" class="detail-image">
+    
+    <div class="detail-info">
+      <label>Titel:</label>
+      <p id="detailTitel"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Type:</label>
+      <p id="detailType"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Genres:</label>
+      <p id="detailGenres"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Beschrijving:</label>
+      <p id="detailBeschrijving"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Rating:</label>
+      <p id="detailRating"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Origineel:</label>
+      <p id="detailBron"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Status:</label>
+      <p id="detailStatus"></p>
+    </div>
+
+    <div class="detail-info">
+      <label>Date completed:</label>
+      <p id="detailDatum"></p>
+    </div>
+
+    <div class="button-group">
+      <a id="btnEdit" class="btn-edit" href="#">Bewerken</a>
+      <button class="btn-delete" onclick="verwijderItem()">Verwijderen</button>
+      <a href="overzicht.html" class="btn-back">Terug</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/detail.js"></script>
+
+</body>
+</html>
+

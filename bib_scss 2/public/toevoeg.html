@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>new item</title>
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+
+  <h1>Mijn Bibliotheek</h1>
+
+  <!-- Link naar overzicht -->
+  <a href="overzicht.html" class="btn-overzicht">Go back to overview</a>
+ <a href="update.html" class="btn-overzicht">Search item</a>
+
+  <h2>New item</h2>
+  <form id="itemForm">
+    <input type="hidden" id="itemId">
+
+    <input type="text" id="titel" placeholder="Titel" required><br>
+    <div class="categorie-upload">
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="film">Film</option>
+        <option value="serie">Serie</option>
+        <option value="anime">Anime</option>
+        <option value="game">Game</option>
+        <option value="boek">Boek</option>
+        <option value="manga">Manga</option>
+        <option value="manhwa">Manhwa</option>
+        <option value="webtoon">Webtoon</option>
+      </select>
+    </div>
+    <!-- <label><input type="checkbox" value=""> </label> -->
+    <div id="genres">
+      <!-- ================= FILM & SERIE ================= -->
+
+      <div class="genre-group" data-type="film serie">
+
+        <!-- MAIN GENRE -->
+        <label><input type="checkbox" value="Action"> Action</label>
+        <label><input type="checkbox" value="Drama"> Drama</label>
+        <label><input type="checkbox" value="Comedy"> Comedy</label>
+        <label><input type="checkbox" value="Romance"> Romance</label>
+        <label><input type="checkbox" value="Thriller"> Thriller</label>
+        <label><input type="checkbox" value="Horror"> Horror</label>
+        <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+        <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+        <label><input type="checkbox" value="Mystery"> Mystery</label>
+        <label><input type="checkbox" value="Adventure"> Adventure</label>
+
+        <div class="genre-divider"></div>
+
+        <!-- SUBGENRE -->
+        <label><input type="checkbox" value="Psychological"> Psychological</label>
+        <label><input type="checkbox" value="Crime"> Crime</label>
+        <label><input type="checkbox" value="Historical"> Historical</label>
+        <label><input type="checkbox" value="War"> War</label>
+        <label><input type="checkbox" value="Supernatural"> Supernatural</label>
+        <label><input type="checkbox" value="Slice of Life"> Slice of Life</label>
+        <label><input type="checkbox" value="Political"> Political</label>
+        <label><input type="checkbox" value="Family"> Family</label>
+
+        <div class="genre-divider"></div>
+
+        <!-- populair -->
+
+        <label><input type="checkbox" value="Based on True Story"> Based on True Story</label>
+        <label><input type="checkbox" value="Dystopian"> Dystopian</label>
+        <label><input type="checkbox" value="Coming of Age"> Coming of Age</label>
+        <label><input type="checkbox" value="Time Travel"> Time Travel</label>
+
+      </div>
+      <!-- ================= ANIME ================= -->
+
+      <div class="genre-group" data-type="anime">
+        <label><input type="checkbox" value="Shounen"> Shounen</label>
+        <label><input type="checkbox" value="Shoujo"> Shoujo</label>
+        <label><input type="checkbox" value="Seinen"> Seinen</label>
+        <label><input type="checkbox" value="Josei"> Josei</label>
+        <label><input type="checkbox" value="Isekai"> Isekai</label>
+        <label><input type="checkbox" value="Mecha"> Mecha</label>
+        <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+        <label><input type="checkbox" value="Action"> Action</label>
+        <div class="genre-divider"></div>
+
+        <label><input type="checkbox" value="Supernatural"> Supernatural</label>
+        <label><input type="checkbox" value="School"> School</label>
+        <label><input type="checkbox" value="Sports"> Sports</label>
+        <label><input type="checkbox" value="Psychological"> Psychological</label>
+        <label><input type="checkbox" value="Harem"> Harem</label>
+        <label><input type="checkbox" value="Reverse Harem"> Reverse Harem</label>
+
+        <div class="genre-divider"></div>
+
+        <!-- populair -->
+
+        <label><input type="checkbox" value="Power Fantasy"> Power Fantasy</label>
+        <label><input type="checkbox" value="Reincarnation"> Reincarnation</label>
+        <label><input type="checkbox" value="Tournament Arc"> Tournament Arc</label>
+
+      </div>
+
+      <!-- ================= GAME ================= -->
+
+      <div class="genre-group" data-type="game">
+
+        <label><input type="checkbox" value="RPG"> RPG</label>
+        <label><input type="checkbox" value="Action"> Action</label>
+        <label><input type="checkbox" value="Adventure"> Adventure</label>
+        <label><input type="checkbox" value="Shooter"> Shooter</label>
+        <label><input type="checkbox" value="Simulation"> Simulation</label>
+        <label><input type="checkbox" value="Strategy"> Strategy</label>
+        <label><input type="checkbox" value="Horror"> Horror</label>
+
+        <div class="genre-divider"></div>
+
+        <label><input type="checkbox" value="Open World"> Open World</label>
+        <label><input type="checkbox" value="Survival"> Survival</label>
+        <label><input type="checkbox" value="Turn Based"> Turn Based</label>
+        <label><input type="checkbox" value="Multiplayer"> Multiplayer</label>
+        <label><input type="checkbox" value="Sandbox"> Sandbox</label>
+
+        <div class="genre-divider"></div>
+
+        <!-- populair -->
+
+        <label><input type="checkbox" value="Indie"> Indie</label>
+        <label><input type="checkbox" value="Soulslike"> Soulslike</label>
+        <label><input type="checkbox" value="Battle Royale"> Battle Royale</label>
+
+      </div>
+      <!-- ================= BOEK ================= -->
+
+      <div class="genre-group" data-type="boek">
+
+        <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+        <label><input type="checkbox" value="Romance"> Romance</label>
+        <label><input type="checkbox" value="Thriller"> Thriller</label>
+        <label><input type="checkbox" value="Mystery"> Mystery</label>
+        <label><input type="checkbox" value="Horror"> Horror</label>
+        <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+        <label><input type="checkbox" value="Non-Fiction"> Non-Fiction</label>
+        <div class="genre-divider"></div>
+
+        <label><input type="checkbox" value="Dark Romance"> Dark Romance</label>
+        <label><input type="checkbox" value="Historical"> Historical</label>
+        <label><input type="checkbox" value="Young Adult"> Young Adult</label>
+        <label><input type="checkbox" value="Biography"> Biography</label>
+        <label><input type="checkbox" value="Self-Help"> Self-Help</label>
+
+        <div class="genre-divider"></div>
+
+        <!-- populair -->
+        <label><input type="checkbox" value="Enemies to Lovers"> Enemies to Lovers</label>
+        <label><input type="checkbox" value="Slow Burn"> Slow Burn</label>
+        <label><input type="checkbox" value="Found Family"> Found Family</label>
+
+      </div>
+
+<!-- ================= manhwa manga webtoon ================= -->
+      <!-- romace -->
+      <div class="genre-group" data-type="manhwa manga webtoon">
+        <label><input type="checkbox" value="BL"> BL</label>
+        <label><input type="checkbox" value="Romance"> Romance</label>
+        <label><input type="checkbox" value="Drama"> Drama</label>
+        <label><input type="checkbox" value="Comedy"> Comedy</label>
+        <label><input type="checkbox" value="Slice of Life"> Slice of Life</label>
+        <label><input type="checkbox" value="Psychological"> Psychological</label>
+        <label><input type="checkbox" value="Tragedy"> Tragedy</label>
+        <div class="genre-divider" aria-hidden="true"></div>
+      </div>
+      <!-- surounding -->
+      <div class="genre-group" data-type="manhwa manga webtoon">
+        <label><input type="checkbox" value="School"> School</label>
+        <label><input type="checkbox" value="Workplace"> Workplace</label>
+        <label><input type="checkbox" value="College/University"> College/University</label>
+        <label><input type="checkbox" value="Office Romance"> Office Romance</label>
+        <label><input type="checkbox" value="Medical"> Medical</label>
+        <label><input type="checkbox" value="Celebrity/Idol"> Celebrity/Idol</label>
+        <label><input type="checkbox" value="Sports"> Sports</label>
+        <label><input type="checkbox" value="Family"> Family</label>
+        <div class="genre-divider" aria-hidden="true"></div>
+      </div>
+      <!-- Fantasy & Supernatural -->
+  <div class="genre-group" data-type="manhwa manga webtoon">
+        <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+        <label><input type="checkbox" value="Supernatural"> Supernatural</label>
+        <label><input type="checkbox" value="Isekai"> Isekai</label>
+        <label><input type="checkbox" value="Reincarnation"> Reincarnation</label>
+        <label><input type="checkbox" value="Time Travel"> Time Travel</label>
+        <label><input type="checkbox" value="Historical"> Historical</label>
+        <label><input type="checkbox" value="Royalty/Aristocracy"> Royalty/Aristocracy</label>
+        <label><input type="checkbox" value="Mythical Creatures"> Mythical Creatures</label>
+        <div class="genre-divider" aria-hidden="true"></div>
+      </div>
+      <!-- action -->
+<div class="genre-group" data-type="manhwa manga webtoon">
+        <label><input type="checkbox" value="Action"> Action</label>
+        <label><input type="checkbox" value="Thriller"> Thriller</label>
+        <label><input type="checkbox" value="Mystery"> Mystery</label>
+        <label><input type="checkbox" value="Horror"> Horror</label>
+        <label><input type="checkbox" value="Crime"> Crime</label>
+        <label><input type="checkbox" value="Mafia/Yakuza"> Mafia/Yakuza</label>
+        <label><input type="checkbox" value="Revenge"> Revenge</label>
+        <label><input type="checkbox" value="Dark Romance"> Dark Romance</label>
+        <div class="genre-divider" aria-hidden="true"></div>
+      </div>
+      <!-- populair -->
+      <div class="genre-group" data-type="manhwa manga webtoon">
+        <label><input type="checkbox" value="Smut"> Smut</label>
+        <label><input type="checkbox" value="Omegaverse"> Omegaverse</label>
+        <label><input type="checkbox" value="Enemies to Lovers"> Enemies to Lovers</label>
+        <label><input type="checkbox" value="Friends to Lovers"> Friends to Lovers</label>
+        <label><input type="checkbox" value="Fated Lovers"> Fated Lovers</label>
+        <label><input type="checkbox" value="Contract Relationship"> Contract Relationship</label>
+        <label><input type="checkbox" value="Arranged Marriage"> Arranged Marriage</label>
+        <label><input type="checkbox" value="Marriage of Convenience"> Marriage of Convenience</label>
+        <label><input type="checkbox" value="Age Gap"> Age Gap</label>
+        <label><input type="checkbox" value="Boss/Employee"> Boss/Employee</label>
+        <label><input type="checkbox" value="Bodyguard"> Bodyguard</label>
+        <label><input type="checkbox" value="Childhood Friends"> Childhood Friends</label>
+        <label><input type="checkbox" value="Mature"> Mature</label>
+        <label><input type="checkbox" value="Slow Burn"> Slow Burn</label>
+        <label><input type="checkbox" value="Angst"> Angst</label>
+        <label><input type="checkbox" value="Fluff"> Fluff</label>
+        <label><input type="checkbox" value="Redemption"> Redemption</label>
+        <label><input type="checkbox" value="Cute"> Cute</label>
+      </div>
+
+    </div>
+
+    <div class="afbeelding-upload">
+      <label for="afbeelding">Afbeelding:</label>
+      <input type="file" id="afbeelding">
+    </div>
+
+    <input type="url" id="bron" placeholder="Link naar originele werk">
+    <textarea id="beschrijving" placeholder="Beschrijving"></textarea>
+    <input type="number" id="rating" placeholder="Rating (1-10)" min="1" max="10"><br>
+
+    <div class="status">
+      <label for="status">Status:</label>
+      <select id="status">
+        <option value="not_yet">want to watch/read</option>
+        <option value="working_on_it">working on it</option>
+        <option value="finished">finished</option>
+      </select>
+    </div>
+    <div class="datum">
+      <label for="datum">Date of completion:</label>
+      <input type="date" id="datum">
+    </div>
+
+    <button type="submit" id="submitBtn">Save</button>
+  </form>
+
+  <h2>Overview</h2>
+  <div class="container" id="lijst"></div>
+
+  <a href="update.html" class="btn-overzicht">Search item</a>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
+

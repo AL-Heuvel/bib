@@ -1,0 +1,43 @@
+@use "../base/variables" as *;
+@use "../components/buttons" as *;
+@use "../components/form" as *;
+@use "../components/cards" as *;
+@use "../components/genres" as *;
+@use "../components/search" as *;
+
+// Detail pagina - echte card styling
+.detail-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.detail-wrapper .card {
+  background-color: $bg-card;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-info {
+  margin-bottom: 15px;
+}
+
+.detail-info label {
+  display: block;
+  color: $accent;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.detail-info p {
+  margin: 0;
+  color: #ffffff;
+}
